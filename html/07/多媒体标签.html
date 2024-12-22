@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <bgsound src="王菲 - 清风徐来.mp3"></bgsound> -->
+    <embed src="王菲 - 清风徐来.mp3" autostart="true" loop="true"></embed>
+    <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="778" height="202">
+        <param name="movie" value="images/banner.swf">
+        <param name="quality" value="high">
+        <param name="wmode" value="transparent">
+        <embed src="images/banner.swf" width="778" height="202" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" wmode="transparent"></embed>
+      </object>
+      如果在这个标签里设置了内容，那么，打开网页时，内容会像弹幕一样自动移动。 属性：
+<!-- 
+      direction="right"：移动的目标方向。属性值可以是：left（从右向左移动，默认值）、right（从左向右移动）、up（从下向上移动）、down（从上向下移动）。
+      
+      behavior="slide"：行为方式。属性值可以是：slide（只移动一次）、scroll（循环移动，默认值）、alternate（循环移动）、。 alternate和scroll属性值都是循环移动，区别在于：假设在direction="right"的情况下，behavior="scroll"表示从左到右、从左到右、从左到右···behavior="alternate"表示从左到右、从右到左、从左到右···
+      
+      scrollamount="30"：移动的速度
+      
+      loop="3": 循环多少圈。负值表示无限循环
+      
+      scrolldelay="1000"：移动一次休息多长时间。单位是毫秒。 -->
+      <marquee behavior="alternate" direction="down"  width="300" height="200" bgcolor="#8c5dc1">我来了</marquee>
+</body>
+</html>

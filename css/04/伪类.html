@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        a:link {
+            color: red;
+        }
+
+        a:visited {
+            color: orange;
+        }
+
+        a:hover {
+            color: green;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav {
+            width: 960px;
+            height: 50px;
+            border: 1px solid red;
+            margin: 100px auto;
+        }
+
+        .nav ul {
+            /*去掉小圆点*/
+            list-style: none;
+        }
+
+        .nav ul li {
+            float: left;
+            width: 120px;
+            height: 50px;
+            /*让内容水平居中*/
+            text-align: center;
+            /*让行高等于nav的高度，就可以保证内容垂直居中*/
+            line-height: 50px;
+        }
+
+        .nav ul li a {
+            display: block;
+            width: 120px;
+            height: 50px;
+        }
+
+        /*两个伪类的属性，可以用逗号隔开*/
+        .nav ul li a:link,
+        .nav ul li a:visited {
+            text-decoration: none;
+            background-color: purple;
+            color: white;
+        }
+
+        .nav ul li a:hover {
+            background-color: orange;
+        }
+
+        /*
+	让文本框获取焦点时：
+	边框：#FF6F3D这种橙色
+	文字：绿色
+	背景色：#6a6a6a这种灰色
+   */
+        input:focus {
+            border: 3px solid #FF6F3D;
+            color: white;
+            background-color: #6a6a6a;
+        }
+
+        /*
+	鼠标放在标签上时显示蓝色
+    */
+        label:hover {
+            color: blue;
+        }
+
+        /*
+	点击标签鼠标没有松开时显示红色
+    */
+        label:active {
+            color: red;
+        }
+
+        /*整个表格的样式*/
+        table {
+            width: 300px;
+            height: 200px;
+            border: 1px solid blue;
+            /*border-collapse属性：对表格的线进行折叠*/
+            border-collapse: collapse;
+        }
+
+        /*鼠标悬停时，让当前行显示#868686这种灰色*/
+        table tr:hover {
+            background: #868686;
+        }
+
+        /*每个单元格的样式*/
+        table td {
+            border: 1px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="https://www.google.com"> 点击链接 </a>
+    <div class="nav">
+        <ul>
+            <li><a href="#">网站栏目</a></li>
+            <li><a href="#">网站栏目</a></li>
+            <li><a href="#">网站栏目</a></li>
+            <li><a href="#">网站栏目</a></li>
+            <li><a href="#">网站栏目</a></li>
+            <li><a href="#">网站栏目</a></li>
+            <li><a href="#">网站栏目</a></li>
+            <li><a href="#">网站栏目</a></li>
+        </ul>
+    </div>
+
+    <table>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+
+</html>

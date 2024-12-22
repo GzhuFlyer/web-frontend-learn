@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .one{
+            width: 100px;
+            height: 100px;
+            border: 1px solid #000;
+            background-color: green;
+        }
+        .two {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            left: 300px;
+            top: 100px;
+            border: 1px solid #000;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="one" draggable="true"></div>
+    <div class="two" ></div>
+    <script>
+        var two = document.querySelector('.two');
+        two.ondragenter = function(){
+            console.log('进入');
+        }
+        two.ondragleave = function(){
+            console.log('离开');
+        }
+        two.ondragover = function(e){
+            //阻止拖拽事件的默认行为
+           e.preventDefault(); //【重要】一定要加这一行代码，否则，后面的方法 ondrop() 无法触发。
+           console.log('拖拽');
+        }
+        two.ondrop = function () {
+            console.log("松开鼠标 ... ")
+        }
+    </script>
+</body>
+</html>

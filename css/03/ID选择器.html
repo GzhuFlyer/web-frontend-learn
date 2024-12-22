@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style type="text/css">
+        #mytitle {
+            border: 3px dashed green;
+        }
+
+        p {
+            font-size: 40px;
+        }
+
+        #para2 {
+            color: red;
+        }
+
+        .one {
+            width: 800px;
+        }
+        /* 通用选择器，将匹配任何标签。不建议使用，IE 有些版本不支持，大网站增加客户端负担。 */
+        * {
+            margin-left: 0px;
+            margin-top: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h2 id="mytitle"> id 选择器显示 </h2>
+    <p> 段落1,标签选择器 </p>
+    <p id="para2"> 段落2 ，标签选择器+id选择器</p>
+    <p id="para3"> 段落3，标签选择器 </p>
+    <p class="one"> 类选择器 + 标签选择器,尽量用类选择器 </p>
+
+</body>
+
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style type="text/css">
+        label{
+            font-size: 200%;
+            font-weight: bold;
+            color: #11ce70;
+            text-decoration: underline;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        p{
+            width: 400px;
+            line-height: 30px;
+        }
+        ul li{
+            list-style-image: url(../../html/06/3.jpg);
+            margin-left: 880px;
+        }
+        div{
+			width: 100px;
+			height: 100px;
+			background-color: #00cc66;
+			margin-right: 100px;
+			float: left;
+		}
+        #div1{
+			overflow: auto;/*超出的部分让浏览器自行解决*/
+		}
+		#div2{
+			overflow: visible;/*超出的部分会显示出来*/
+		}
+
+		#div3{
+			overflow: hidden;/*超出的部分将剪切掉*/
+		}
+    </style>
+</head>
+<body>
+    <div>css中相对单位 <label> 演示200% </label></div>
+    <p>
+        在显示上总共为9行，30px * 9 = 270px为字体的高
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, 
+        libero. Quisquam, quaerat. Quo, doloremque? Voluptate, optio. Quod, 
+        quibusdam. Quas, quaerat. Quisquam, quaerat. Quo, doloremque? Voluptate,
+         optio. Quod, quibusdam. Quas, quaerat. Quisquam, quaerat. Quo, doloremque?
+         Voluptate, optio. Quod, quibusdam. Quas, quaerat.
+    </p>
+    <ul>
+        <li>1，显示 图片 </li>
+        <li>2，显示 图片 </li>
+        <li>3，显示 图片 </li>
+    </ul>
+
+    <div id="div1">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+	<div id="div2">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+	<div id="div3">其实很简单 其实很自然 两个人的爱由两人分担 其实并不难 是你太悲观 隔着一道墙不跟谁分享 不想让你为难 你不再需要给我个答案</div>
+ 
+    <table>
+        <tr>
+            <td>  原图片 </td>
+            <td> 图片加入黑白效果 </td>
+        </tr>
+
+        <tr>
+            <td><img src="../../html/06/3.jpg" > </td>
+            <td><img src="../../html/06/3.jpg" style="filter:gray()"> </td>
+        </tr>
+
+    </table>
+
+</body>
+</html>
